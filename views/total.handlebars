@@ -1,0 +1,19 @@
+{{#if error}}
+
+	<h2>Error</h2>
+	<p>{{message}}</p>
+	<p><a href="/">Try Again</a></p>
+	
+{{else}}
+
+
+<p>
+		Your salary in 2016 is <b>${{yrsalary}}</b> puts you in the <b>{{taxRate}}%</b> bracket in federeal withholding.
+    </p>
+	
+	<p>Your new salary for 2016 is:</p>
+
+	<h1 class="tip">${{newTotal}}</h1>
+
+	<p><a href="/">Calculate Another</a></p>
+{{/if}}
